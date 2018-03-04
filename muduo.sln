@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "muduo", "muduo\muduo.vcxproj", "{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Debug|ARM.Build.0 = Debug|ARM
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Debug|x64.ActiveCfg = Debug|x64
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Debug|x64.Build.0 = Debug|x64
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Debug|x86.ActiveCfg = Debug|x86
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Debug|x86.Build.0 = Debug|x86
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Release|ARM.ActiveCfg = Release|ARM
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Release|ARM.Build.0 = Release|ARM
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Release|x64.ActiveCfg = Release|x64
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Release|x64.Build.0 = Release|x64
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Release|x86.ActiveCfg = Release|x86
+		{1B8C6010-1CA1-4700-B8EB-2101B40EC12F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28BFCB41-F60C-4015-8719-5DF0621E834B}
+	EndGlobalSection
+EndGlobal

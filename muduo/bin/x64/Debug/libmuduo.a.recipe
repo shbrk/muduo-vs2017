@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <LocalLibPath>E:\linux\muduo\muduo\bin\x64\Debug\libmuduo.a</LocalLibPath>
+  <ObjPaths>E:\linux\muduo\muduo\obj\x64\Debug\</ObjPaths>
+  <Configuration>Debug</Configuration>
+  <Platform>x64</Platform>
+</Project>

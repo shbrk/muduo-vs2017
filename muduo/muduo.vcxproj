@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1b8c6010-1ca1-4700-b8eb-2101b40ec12f}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>muduo</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="base\AsyncLogging.cc" />
+    <ClCompile Include="base\Condition.cc" />
+    <ClCompile Include="base\CountDownLatch.cc" />
+    <ClCompile Include="base\Date.cc" />
+    <ClCompile Include="base\Exception.cc" />
+    <ClCompile Include="base\FileUtil.cc" />
+    <ClCompile Include="base\LogFile.cc" />
+    <ClCompile Include="base\Logging.cc" />
+    <ClCompile Include="base\LogStream.cc" />
+    <ClCompile Include="base\ProcessInfo.cc" />
+    <ClCompile Include="base\Thread.cc" />
+    <ClCompile Include="base\ThreadPool.cc" />
+    <ClCompile Include="base\Timestamp.cc" />
+    <ClCompile Include="base\TimeZone.cc" />
+    <ClCompile Include="net\Acceptor.cc" />
+    <ClCompile Include="net\boilerplate.cc" />
+    <ClCompile Include="net\Buffer.cc" />
+    <ClCompile Include="net\Channel.cc" />
+    <ClCompile Include="net\Connector.cc" />
+    <ClCompile Include="net\EventLoop.cc" />
+    <ClCompile Include="net\EventLoopThread.cc" />
+    <ClCompile Include="net\EventLoopThreadPool.cc" />
+    <ClCompile Include="net\http\HttpContext.cc" />
+    <ClCompile Include="net\http\HttpResponse.cc" />
+    <ClCompile Include="net\http\HttpServer.cc" />
+    <ClCompile Include="net\InetAddress.cc" />
+    <ClCompile Include="net\inspect\Inspector.cc" />
+    <ClCompile Include="net\inspect\PerformanceInspector.cc" />
+    <ClCompile Include="net\inspect\ProcessInspector.cc" />
+    <ClCompile Include="net\inspect\SystemInspector.cc" />
+    <ClCompile Include="net\Poller.cc" />
+    <ClCompile Include="net\poller\DefaultPoller.cc" />
+    <ClCompile Include="net\poller\EPollPoller.cc" />
+    <ClCompile Include="net\poller\PollPoller.cc" />
+    <ClCompile Include="net\Socket.cc" />
+    <ClCompile Include="net\SocketsOps.cc" />
+    <ClCompile Include="net\TcpClient.cc" />
+    <ClCompile Include="net\TcpConnection.cc" />
+    <ClCompile Include="net\TcpServer.cc" />
+    <ClCompile Include="net\Timer.cc" />
+    <ClCompile Include="net\TimerQueue.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\AsyncLogging.h" />
+    <ClInclude Include="base\Atomic.h" />
+    <ClInclude Include="base\BlockingQueue.h" />
+    <ClInclude Include="base\BoundedBlockingQueue.h" />
+    <ClInclude Include="base\Condition.h" />
+    <ClInclude Include="base\copyable.h" />
+    <ClInclude Include="base\CountDownLatch.h" />
+    <ClInclude Include="base\CurrentThread.h" />
+    <ClInclude Include="base\Date.h" />
+    <ClInclude Include="base\Exception.h" />
+    <ClInclude Include="base\FileUtil.h" />
+    <ClInclude Include="base\GzipFile.h" />
+    <ClInclude Include="base\LogFile.h" />
+    <ClInclude Include="base\Logging.h" />
+    <ClInclude Include="base\LogStream.h" />
+    <ClInclude Include="base\Mutex.h" />
+    <ClInclude Include="base\noncopyable.h" />
+    <ClInclude Include="base\ProcessInfo.h" />
+    <ClInclude Include="base\Singleton.h" />
+    <ClInclude Include="base\StringPiece.h" />
+    <ClInclude Include="base\Thread.h" />
+    <ClInclude Include="base\ThreadLocal.h" />
+    <ClInclude Include="base\ThreadLocalSingleton.h" />
+    <ClInclude Include="base\ThreadPool.h" />
+    <ClInclude Include="base\Timestamp.h" />
+    <ClInclude Include="base\TimeZone.h" />
+    <ClInclude Include="base\Types.h" />
+    <ClInclude Include="base\WeakCallback.h" />
+    <ClInclude Include="net\Acceptor.h" />
+    <ClInclude Include="net\boilerplate.h" />
+    <ClInclude Include="net\Buffer.h" />
+    <ClInclude Include="net\Callbacks.h" />
+    <ClInclude Include="net\Channel.h" />
+    <ClInclude Include="net\Connector.h" />
+    <ClInclude Include="net\Endian.h" />
+    <ClInclude Include="net\EventLoop.h" />
+    <ClInclude Include="net\EventLoopThread.h" />
+    <ClInclude Include="net\EventLoopThreadPool.h" />
+    <ClInclude Include="net\http\HttpContext.h" />
+    <ClInclude Include="net\http\HttpRequest.h" />
+    <ClInclude Include="net\http\HttpResponse.h" />
+    <ClInclude Include="net\http\HttpServer.h" />
+    <ClInclude Include="net\InetAddress.h" />
+    <ClInclude Include="net\inspect\Inspector.h" />
+    <ClInclude Include="net\inspect\PerformanceInspector.h" />
+    <ClInclude Include="net\inspect\ProcessInspector.h" />
+    <ClInclude Include="net\inspect\SystemInspector.h" />
+    <ClInclude Include="net\Poller.h" />
+    <ClInclude Include="net\poller\EPollPoller.h" />
+    <ClInclude Include="net\poller\PollPoller.h" />
+    <ClInclude Include="net\Socket.h" />
+    <ClInclude Include="net\SocketsOps.h" />
+    <ClInclude Include="net\TcpClient.h" />
+    <ClInclude Include="net\TcpConnection.h" />
+    <ClInclude Include="net\TcpServer.h" />
+    <ClInclude Include="net\Timer.h" />
+    <ClInclude Include="net\TimerId.h" />
+    <ClInclude Include="net\TimerQueue.h" />
+    <ClInclude Include="net\ZlibStream.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>/home/szy/projects;E:\linux\muduo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
